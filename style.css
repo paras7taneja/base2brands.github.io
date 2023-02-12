@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Ubuntu:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.brown-strip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #33111A;
+    color: wheat;
+    height: 2.5rem;
+}
+
+.left-side {
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+.right-side {
+    display: flex;
+    gap: 0.75rem;
+    margin-right: 4rem;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.fa-brands{
+    font-size: 1.5rem;
+}
+
+
+
+                                                                            /* logo-strip */
+
+
+
+
+
+.logo-strip {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    background: white;
+}
+
+/* .inLeft img{
+    width: 2rem;
+} */
+
+.inLeft {
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+.inLeft .imgtwo {
+    height: 90%;
+}
+
+.inMiddle {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.inMiddle ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1.8rem;
+    align-items: center;
+    color: #33111A;
+    margin-bottom: 0;
+    transition: all 0.5s;
+}
+
+.inMiddle ul li:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px black;
+}
+
+.inRight {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+
+
+
+
+                                                                                /* banner header */
+
+
+
+
+
+.banner1 .line {
+    width: 100%;
+}
+
+.banner1 {
+    width: 100%;
+    height: 40rem;
+    background-image: url('images/banner1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .line{
+    width: 100%;
+    background: #6a1c1c;
+    height: 0.1rem;
+} */
+
+.leftLights,
+.rightLights {
+    width: auto;
+    height: 14rem;
+    margin-top: -0.3rem;
+}
+
+.lights {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lightL {
+    animation: pendulam 3.5s linear infinite;
+}
+
+@keyframes pendulam {
+
+    0% {
+        rotate: 1deg
+    }
+
+    50% {
+        rotate: -1deg
+    }
+
+    100% {
+        rotate: 1deg;
+    }
+
+}
+
+
+
+.rightLights {
+    margin-right: 1rem;
+    transition: all 1s;
+    animation: water-wave 3.5s linear infinite;
+
+}
+
+@keyframes water-wave {
+    0% {
+        rotate: -1deg
+    }
+
+    50% {
+        rotate: 2deg
+    }
+
+    100% {
+        rotate: -1deg;
+    }
+}
+
+.rod img {
+    width: 1.5rem;
+    margin-left: 12rem;
+}
+
+.text {
+    font-size: 3.5rem;
+}
+
+.lorem {
+    font-size: 1.2rem;
+    /* width: 33%; */
+    /* margin-left: 20%; */
+    /* margin-top: 2%; */
+}
+
+.rod {
+    height: 0;
+}
+
+.LoremText {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap: 2rem;
+    margin-left: 20%;
+}
+
+.btnExplore {
+    display: flex;
+    /* margin-left: 14%; */
+    /* margin-top: 3%; */
+    padding: 3%;
+    font-size: 1.1rem;
+    border: none;
+    background: #33111A;
+    color: white;
+    transition: all 0.5s;
+    border-radius: 0.5rem;
+    justify-content: center;
+    width: 44%;
+}
+
+.btnExplore:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+
+
+
+                                                                            /* shop by categories section */
+
+
+
+
+
+.heading {
+    margin: auto;
+    text-align: center;
+    margin-top: 5rem;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.vectorImg {
+    display: block;
+    text-align: center;
+    margin: auto;
+
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.grid-three-columns {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.photos {
+    margin-top: 4rem;
+}
+
+.photos img {
+    width: 90%;
+    transition: all 0.2s;
+}
+
+.photos img:hover{
+    box-shadow: 1px 7px 10px black;
+}
+
+
+
+
+
+                                                                            /*new arrivals  */
+
+
+
+
+.iconList {
+    display: flex;
+    list-style-type: none;
+    gap: 0.2rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 19% !important;
+    gap: 0rem;
+}
+
+.cards p {
+    font-weight: 100;
+}
+
+.cards h4 {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.cards img {
+    width: 90%;
+    border-radius: 1rem;
+    border-radius: 0.5rem;
+
+}
+
+.shopImg {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.iconList {
+    color: #FFB800;
+}
+
+.btnView {
+    display: flex;
+    padding: 1%;
+    margin: auto;
+    margin-top: 4rem;
+    font-size: 1.1rem;
+    border: none;
+    background: #33111A;
+    color: white;
+    transition: all 0.5s;
+    border-radius: 0.5rem;
+    justify-content: center;
+    width: 9%;
+}
+
+.btnView:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* .swiper {
+    width: 100%;
+    height: 100%;
+  } */
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+
+.swiper {
+    width: 80%;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+
+
+
+                                                                        /* festive bestsellers banner */
+
+
+
+
+
+.section-festive .banner {
+    width: 80%;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.section-festive {
+    position: relative;
+}
+
+.bubbleBanner {
+    width: 100%;
+    /* margin-top: -5rem; */
+    position: absolute;
+    z-index: -1;
+    top: 38rem;
+    height: 80%;
+    overflow: hidden;
+}
+
+.section-festive-rod{
+    rotate: 90deg;
+    width: 1%;
+    margin-top: -6rem;
+}
+
+.festive-heading{
+    margin-top: 24rem;
+}
+
+
+
+
+                                                                                /* insta profile */
+
+
+
+
+.insta-profile img{
+    width: 100%;
+}
+
+
+
+
+
+                                                                                /*customer reviews  */
+
+
+.carousel{
+    width: 55%;
+    margin: auto;
+    margin-top: 7rem;
+}
+
+.section-reviews{
+    background: #F6E2C5;
+    margin-top: -5rem !important;
+    padding-bottom: 8rem;
+}
+
+
+
+
+                                                                                    /*search box  */
+
+
+.section-searchBox{
+    display: flex;
+    background: #33111A;
+}
+
+.searchBox{
+    display: flex;
+    padding: 1rem;
+    color: #FFD2A9;
+    gap: 7rem;
+    margin: auto;
+    align-items: center;
+}
+
+.searchBox p{
+    margin-top: 1rem;
+}
+
+.search{
+    padding: 0.4rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border: none;
+    width: 20rem;
+}
+
+.searchBtn{
+    margin-left: -7rem;
+    border: none;
+    padding: 0.4rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background: #FFD2A9;
+    width: 5rem;
+}
